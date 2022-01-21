@@ -4,15 +4,6 @@ import java.util.*;
 import java.io.*;
 /*
 * https://www.acmicpc.net/problem/9019
-* 예제 입력
-3
-1234 3412
-1000 1
-1 16
-* 예제 출력
-LL
-L
-DDDD
 * */
 public class DSLR_골드5 {
         static int a,b;

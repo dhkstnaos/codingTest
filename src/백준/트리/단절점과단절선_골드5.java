@@ -5,7 +5,6 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.StringTokenizer;
-
 /*
  * https://www.acmicpc.net/problem/14675
 1. 트리는 사이클이 없고, 모든 정점이 연결되어 있다. (문제에 나와있다.)

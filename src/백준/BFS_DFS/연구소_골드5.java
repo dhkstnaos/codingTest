@@ -48,9 +48,7 @@ public class 연구소_골드5 {
         for(int i = 0; i < n; i++) {
             for(int j = 0 ; j < m; j++) {
                 if(map[i][j] == 0) {
-                    map[i][j] = 1;
-                    dfs(1); // 빈 곳을 벽으로 채운다.
-                    map[i][j] = 0;
+                    dfs(0); // 빈 곳을 벽으로 채운다.
                 }
             }
         }
