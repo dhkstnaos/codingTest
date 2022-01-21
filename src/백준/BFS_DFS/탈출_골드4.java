@@ -118,16 +118,10 @@ public class 탈출_골드4 {
     }
     // 고슴도치의 이동 가능 여부
     private static boolean isMove(int row, int col) {
-        if (map[row][col] == '.' || map[row][col] == 'D') {
-            return true;
-        }
-        return false;
+        return map[row][col] == '.' || map[row][col] == 'D';
     }
     // 범위 검사
     private static boolean isIn(int row, int col) {
-        if (row < 0 || row >= R || col < 0 || col >= C) {
-            return false;
-        }
-        return true;
+        return row >= 0 && row < R && col >= 0 && col < C;
     }
 }
