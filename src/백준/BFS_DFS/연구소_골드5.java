@@ -1,4 +1,4 @@
-package BFS_DFS;
+package 백준.BFS_DFS;
 
 import java.util.LinkedList;
 import java.util.Queue;
