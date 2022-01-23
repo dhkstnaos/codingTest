@@ -1,4 +1,4 @@
-package 백준.문자열;
+package 백준.문자열.LIS;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
