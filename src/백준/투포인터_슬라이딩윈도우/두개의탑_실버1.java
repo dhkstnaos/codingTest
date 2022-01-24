@@ -31,5 +31,6 @@ public class 두개의탑_실버1 {
                 s++;
             }
         }
+        System.out.println(ans);
     }
 }
