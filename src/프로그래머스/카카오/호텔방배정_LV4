@@ -1,5 +1,3 @@
-package 프로그래머스.카카오;
-
 import java.util.*;
 class Solution {
     HashMap<Long, Long> map = new HashMap<>();

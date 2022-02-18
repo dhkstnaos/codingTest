@@ -1,0 +1,24 @@
+import java.util.*;
+import java.io.*;
+
+class Solution {
+    public int cal(int length,int range) {
+        if(length<=0) return 0;
+        //나머지가 없을때 범위로 나눕니다.
+        if(length%range==0) return length/range;
+        //있을때 +1 합니다.
+        else return length/range +1;
+    }
+    public int solution(int n, int[] stations, int w) {
+        int answer = 0;
+        int range = 2*w +1;
+        //처음과 중간 기지국 설치 개수
+        for(int i=0;i<stations.length;i++) {
+            if(i==0) answer+= cal(stations[0]-w-1,range);
+            else answer+=cal(stations[i]-stations[i-1]-range,range);
+        }
+        //마지막 기지국 후의 설치 개수
+        answer+= cal(n-stations[stations.length-1]-w,range);
+        return answer;
+    }
+}
