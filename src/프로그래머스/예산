@@ -1,0 +1,29 @@
+import java.util.*;
+class Solution {
+    public int solution(int[] budgets, int M) {
+        int answer = 0;
+        long sum;
+        //최대 예산을 budgets의 가장 큰 수 선택하기 위해 정렬
+        Arrays.sort(budgets);
+        int left=1;
+        int right=budgets[budgets.length-1];
+        int mid=0;
+        while(left<=right) {
+            mid=(left+right)/2;
+            sum=0;
+            for(int i=0;i<budgets.length;i++) {
+                //상한선보다 작거나 같다면 그대로 합계 계산.
+                if(budgets[i]<=mid) sum+=budgets[i];
+                //상한선 초과하면 상한선만 가액
+                else sum+=mid;
+            }
+            if(sum<=M) {
+                answer=mid;
+                left=mid+1;
+            }
+            else right=mid-1;
+        }
+
+        return answer;
+    }
+}
