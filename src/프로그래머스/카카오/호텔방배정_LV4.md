@@ -1,3 +1,4 @@
+```java
 import java.util.*;
 class Solution {
     HashMap<Long, Long> map = new HashMap<>();
@@ -20,3 +21,4 @@ class Solution {
         return emptyRoom;
     }
 }
+```
